@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epontee</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+<style>
+    /* Home Section */
+.homepage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    height: calc(100vh - 100px); /* Minus navbar height */
+    background-color: #f4f4f4;
+  }
+  
+  .content-left {
+    flex: 1;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s forwards ease-out 0.5s;
+  }
+  
+  .content-left h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .content-left p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .learn-more-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #ffcc00;
+  }
+  
+  .content-right {
+    flex: 1;
+    text-align: right;
+    opacity: 0;
+    transform: translateX(100px);
+    animation: slideIn 1.5s forwards ease-out 0.5s;
+  }
+  
+  .homepage-image {
+    max-width: 100%;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+          <h1 class="company-name">Epontee</h1>
+        </div>
+        <div class="navbar-right">
+          <ul class="menu">
+            <li><a href="index.html">Home <span class="arrow">&#9654;</span></a></li>
+            <li><a href="about.html">About <span class="arrow">&#9654;</span></a></li>
+            <li><a href="courses.html">Courses <span class="arrow">&#9654;</span></a></li>
+            <li><a href="trainings.html">Trainings <span class="arrow">&#9654;</span></a></li>
+            <li><a href="newbatches.html">New Batches <span class="arrow">&#9654;</span></a></li>
+            <li><a href="jobopenings.html">Job Openings <span class="arrow">&#9654;</span></a></li>
+          </ul>
+        </div>
+      </nav>
+
+       <!-- Home Section -->
+  <section class="homepage" id="home">
+    <div class="content-left">
+      <h2>Welcome to Epontee Coaching Institute</h2>
+      <p>
+        Epontee is dedicated to providing high-quality education and training services for students and professionals. Our tailored courses and corporate training programs are designed to meet your learning goals and help you succeed in your career.
+      </p>
+      <p>
+        With experienced instructors and a focus on innovation, we ensure you stay ahead of the competition. Explore our diverse offerings and take your skills to the next level.
+      </p>
+      <button class="learn-more-btn">Learn More</button>
+    </div>
+    <div class="content-right">
+      <img src="home1.jpeg" alt="Epontee Coaching" class="homepage-image">
+    </div>
+  </section>
+      
+      
+</body>
+</html>

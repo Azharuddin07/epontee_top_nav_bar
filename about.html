@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Epontee Coaching Institute</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+     /* About Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+  
+  .about-content {
+    flex: 1;
+    margin-right: 50px;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeInLeft 1.5s forwards ease-out;
+  }
+  
+  .about-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .about-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-btn:hover {
+    background-color: #ffcc00;
+  }
+  
+  .about-image {
+    flex: 1;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: fadeInRight 1.5s forwards ease-out;
+  }
+  
+  .about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Animations */
+  @keyframes fadeInLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  </style>
+</head>
+<body>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+          <h1 class="company-name">Epontee</h1>
+        </div>
+        <div class="navbar-right">
+          <ul class="menu">
+            <li><a href="index.html">Home <span class="arrow">&#9654;</span></a></li>
+            <li><a href="about.html">About <span class="arrow">&#9654;</span></a></li>
+            <li><a href="courses.html">Courses <span class="arrow">&#9654;</span></a></li>
+            <li><a href="trainings.html">Trainings <span class="arrow">&#9654;</span></a></li>
+            <li><a href="newbatches.html">New Batches <span class="arrow">&#9654;</span></a></li>
+            <li><a href="jobopenings.html">Job Openings <span class="arrow">&#9654;</span></a></li>
+          </ul>
+        </div>
+      </nav>
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <h2 class="about-title">About Epontee Coaching Institute</h2>
+        <p class="about-description">
+          Epontee Coaching Institute is a leading provider of educational and training services, 
+          offering students and professionals a platform to enhance their knowledge and skills. 
+          With a mission to empower individuals through learning, we have been transforming lives 
+          through innovation and quality education for years.
+        </p>
+        <p class="about-description">
+          Our team consists of experienced educators and industry experts dedicated to delivering 
+          cutting-edge courses and corporate training programs that meet the evolving demands of the 
+          market. Whether you're a student preparing for exams or a professional looking to upskill, 
+          Epontee is here to guide you at every step.
+        </p>
+        <p class="about-description">
+          We take pride in fostering an environment where learning is dynamic, interactive, and personalized 
+          to each individual's unique needs. Join us and be part of a community that values knowledge, innovation, 
+          and growth.
+        </p>
+        <button class="about-btn">Explore Our courses</button>
+      </div>
+      <div class="about-image">
+        <img src="about.jpg" alt="Epontee Coaching" class="about-img">
+      </div>
+    </div>
+  </section>
+</body>
+</html>

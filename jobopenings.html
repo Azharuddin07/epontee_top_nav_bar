@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Openings</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Job Openings Section */
+/* Job Openings Section */
+.job-openings-section {
+    padding: 50px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+.intro-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Jobs Container */
+.jobs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Job Cards */
+.job-card {
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.job-card.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.job-info {
+    padding: 20px;
+}
+
+.job-info h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.job-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.job-content {
+    display: none;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+          <h1 class="company-name">Epontee</h1>
+        </div>
+        <div class="navbar-right">
+          <ul class="menu">
+            <li><a href="index.html">Home <span class="arrow">&#9654;</span></a></li>
+            <li><a href="about.html">About <span class="arrow">&#9654;</span></a></li>
+            <li><a href="courses.html">Courses <span class="arrow">&#9654;</span></a></li>
+            <li><a href="trainings.html">Trainings <span class="arrow">&#9654;</span></a></li>
+            <li><a href="newbatches.html">New Batches <span class="arrow">&#9654;</span></a></li>
+            <li><a href="jobopenings.html">Job Openings <span class="arrow">&#9654;</span></a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+        <!-- Job Openings Section -->
+        <section id="job-openings" class="job-openings-section">
+            <div class="intro-section">
+                <h1 class="section-title">Job Openings</h1>
+                <p class="intro-text">Explore our latest job openings across various domains in India. Find a role that matches your skills and experience!</p>
+            </div>
+            <div class="jobs-container">
+                <!-- Job Cards -->
+                <div class="job-card animated">
+                    <div class="job-info">
+                        <h3>Software Engineer</h3>
+                        <p class="company-name">Tata Consultancy Services</p>
+                        <p class="location">Bangalore, Karnataka</p>
+                        <p class="experience">2-4 years of experience</p>
+                        <p class="domain">Software Development</p>
+                        <p class="job-content">We are looking for a Software Engineer with proficiency in Java and experience in Agile methodologies.</p>
+                    </div>
+                </div>
+                <div class="job-card animated">
+                    <div class="job-info">
+                        <h3>Data Analyst</h3>
+                        <p class="company-name">Infosys</p>
+                        <p class="location">Hyderabad, Telangana</p>
+                        <p class="experience">1-3 years of experience</p>
+                        <p class="domain">Data Analysis</p>
+                        <p class="job-content">Join our team as a Data Analyst to work on data visualization and statistical analysis.</p>
+                    </div>
+                </div>
+                <div class="job-card animated">
+                    <div class="job-info">
+                        <h3>UX Designer</h3>
+                        <p class="company-name">Wipro</p>
+                        <p class="location">Pune, Maharashtra</p>
+                        <p class="experience">3-5 years of experience</p>
+                        <p class="domain">User Experience Design</p>
+                        <p class="job-content">Seeking a UX Designer with expertise in creating user-centered designs and wireframes.</p>
+                    </div>
+                </div>
+                <div class="job-card animated">
+                    <div class="job-info">
+                        <h3>Product Manager</h3>
+                        <p class="company-name">HCL Technologies</p>
+                        <p class="location">Noida, Uttar Pradesh</p>
+                        <p class="experience">5-7 years of experience</p>
+                        <p class="domain">Product Management</p>
+                        <p class="job-content">We are looking for a Product Manager to lead product development and strategy.</p>
+                    </div>
+                </div>
+                <div class="job-card animated">
+                    <div class="job-info">
+                        <h3>DevOps Engineer</h3>
+                        <p class="company-name">Tech Mahindra</p>
+                        <p class="location">Chennai, Tamil Nadu</p>
+                        <p class="experience">2-4 years of experience</p>
+                        <p class="domain">DevOps</p>
+                        <p class="job-content">Seeking a DevOps Engineer with experience in CI/CD pipelines and cloud platforms.</p>
+                    </div>
+                </div>
+                <div class="job-card animated">
+                    <div class="job-info">
+                        <h3>Digital Marketing Specialist</h3>
+                        <p class="company-name">Zensar Technologies</p>
+                        <p class="location">Mumbai, Maharashtra</p>
+                        <p class="experience">2-4 years of experience</p>
+                        <p class="domain">Digital Marketing</p>
+                        <p class="job-content">Looking for a Digital Marketing Specialist with experience in SEO, SEM, and social media marketing.</p>
+                    </div>
+                </div>
+                <div class="job-card animated">
+                    <div class="job-info">
+                        <h3>Sales Manager</h3>
+                        <p class="company-name">Capgemini</p>
+                        <p class="location">Delhi</p>
+                        <p class="experience">4-6 years of experience</p>
+                        <p class="domain">Sales Management</p>
+                        <p class="job-content">Join us as a Sales Manager to drive business growth and manage sales teams.</p>
+                    </div>
+                </div>
+                <div class="job-card animated">
+                    <div class="job-info">
+                        <h3>HR Manager</h3>
+                        <p class="company-name">Cognizant</p>
+                        <p class="location">Kolkata, West Bengal</p>
+                        <p class="experience">5-7 years of experience</p>
+                        <p class="domain">Human Resources</p>
+                        <p class="job-content">We are looking for an HR Manager to handle recruitment, employee relations, and performance management.</p>
+                    </div>
+                </div>
+                <div class="job-card animated">
+                    <div class="job-info">
+                        <h3>Content Writer</h3>
+                        <p class="company-name">Oracle</p>
+                        <p class="location">Gurgaon, Haryana</p>
+                        <p class="experience">1-3 years of experience</p>
+                        <p class="domain">Content Creation</p>
+                        <p class="job-content">Seeking a Content Writer with a knack for creating engaging content and managing editorial calendars.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const jobCards = document.querySelectorAll('.job-card');
+
+    function revealCards(cards) {
+        const windowHeight = window.innerHeight;
+        cards.forEach((card) => {
+            const cardTop = card.getBoundingClientRect().top;
+            if (cardTop < windowHeight * 0.8) {
+                card.classList.add('animated');
+            }
+        });
+    }
+
+    function toggleCardContent(cards) {
+        cards.forEach(card => {
+            card.addEventListener('click', function () {
+                const content = this.querySelector('.job-content');
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    }
+
+    // Reveal cards on scroll
+    window.addEventListener('scroll', () => {
+        revealCards(jobCards);
+    });
+
+    // Toggle card content on click
+    toggleCardContent(jobCards);
+
+    // Initial reveal of cards on page load
+    revealCards(jobCards);
+});
+
+    </script>
+</body>
+</html>
